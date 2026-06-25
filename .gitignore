@@ -1,0 +1,50 @@
+# =========================
+# Python (Backend - FastAPI)
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+.env
+.venv/
+venv/
+
+# SQLite database (LOCAL ONLY)
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploads / runtime data
+backend/uploads/
+
+# IDE
+.vscode/
+.vs/
+.idea/
+
+# logs
+*.log
+
+# =========================
+# Node / React / Vite (Frontend)
+# =========================
+node_modules/
+dist/
+build/
+
+# Vite cache
+.vite/
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# lock file zostaje (dla stabilności)
+# package-lock.json -> NIE ignorujemy
+
+# =========================
+# Docker (opcjonalne cache)
+# =========================
+.docker/
