@@ -1,8 +1,10 @@
-FROM python:3.12-slim # Use a slim Python image for a smaller footprint
+# Slim Python image for a smaller footprint
+FROM python:3.12-slim 
 
 WORKDIR /app
 
-COPY requirements.txt .  # Copy the requirements file to the working directory
+# Copy the requirements file to the working directory
+COPY requirements.txt .  
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .

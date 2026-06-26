@@ -32,6 +32,34 @@ Frontend (PowerShell):
 3. Otwórz przeglądarkę pod adresem podanym przez Vite (domyślnie http://localhost:3000)
 
 
+
+
+Uruchomienie projektu za pomocą Dockera
+------------------
+Wymagania
+Docker
+Docker Compose
+
+Sprawdź:
+docker --version
+docker compose version
+
+Uruchomienie projektu
+W głównym folderze projektu (tam gdzie docker-compose.yml) uruchom: docker compose up --build
+
+Dostęp do aplikacji - Po uruchomieniu wejdź na strony:
+Frontend (React + Vite) http://localhost:3000
+Sprawdzenie działania Backendu (FastAPI) http://localhost:8000
+Dokumentacja API (Swagger) http://localhost:8000/docs
+
+
+Zatrzymanie aplikacji: docker compose down
+
+Reset (opcjonalnie) - Jeśli chcesz usunąć wszystkie kontenery i cache:
+docker compose down --volumes --rmi all
+
+
+
 --------------------------------------------------------------
 
 Plik bazy danych
