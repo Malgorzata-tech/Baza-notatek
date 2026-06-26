@@ -37,11 +37,11 @@ Frontend (PowerShell):
 Uruchomienie projektu za pomocą Dockera
 ------------------
 Wymagania
-- Docker
+- Docker,
 - Docker Compose
 
 Sprawdź:
-- docker --version
+- docker --version,
 - docker compose version
 
 Uruchomienie projektu
