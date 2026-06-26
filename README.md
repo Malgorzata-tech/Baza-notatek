@@ -37,26 +37,26 @@ Frontend (PowerShell):
 Uruchomienie projektu za pomocą Dockera
 ------------------
 Wymagania
-Docker
-Docker Compose
+- Docker
+- Docker Compose
 
 Sprawdź:
-docker --version
-docker compose version
+- docker --version
+- docker compose version
 
 Uruchomienie projektu
-W głównym folderze projektu (tam gdzie docker-compose.yml) uruchom: docker compose up --build
+W głównym folderze projektu (tam gdzie docker-compose.yml) uruchom:    docker compose up --build
 
 Dostęp do aplikacji - Po uruchomieniu wejdź na strony:
-Frontend (React + Vite) http://localhost:3000
-Sprawdzenie działania Backendu (FastAPI) http://localhost:8000
-Dokumentacja API (Swagger) http://localhost:8000/docs
+Frontend (React + Vite)    http://localhost:3000
+Sprawdzenie działania Backendu (FastAPI)    http://localhost:8000
+Dokumentacja API (Swagger)    http://localhost:8000/docs
 
 
-Zatrzymanie aplikacji: docker compose down
+Zatrzymanie aplikacji:    docker compose down
 
 Reset (opcjonalnie) - Jeśli chcesz usunąć wszystkie kontenery i cache:
-docker compose down --volumes --rmi all
+   docker compose down --volumes --rmi all
 
 
 
